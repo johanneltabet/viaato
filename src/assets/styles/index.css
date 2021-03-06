@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+    url('../fonts/CircularStd-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+    url('../fonts/CircularStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Bold.woff2') format('woff2'),
+    url('../fonts/CircularStd-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Black.woff2') format('woff2'),
+    url('../fonts/CircularStd-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --bg: #fff;
+  --text: #000;
+  --brand: #4f46e5;
+  --gray: rgba(0, 0, 0, 0.6);
+  --header-bg: hsla(0, 0%, 100%, 0.6);
+  --border: rgba(0, 0, 0, 0.08);
+  --font-family: 'Circular Std', -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    Helvetica Neue, sans-serif;
+  --site-width: 1200px;
+  --input: #ffffff;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg);
+  color: var(--text);
+  @apply antialiased;
+}
+
+body a:focus,
+body button:focus {
+  outline: none;
+}
+
+body.has-keyboard a:focus,
+body.has-keyboard button:focus {
+  outline: 2px solid #818cf8;
+  outline-offset: -1px;
+}
+
+.wrap {
+  @apply px-6;
+  max-width: var(--site-width);
+  margin: 0 auto;
+}
