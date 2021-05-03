@@ -1,0 +1,3 @@
+# viaato
+A personal sideproject I scaffolded to get familiar with React hooks and Typescript.
+It uses React, Vite.js, Tailwind, Firebase, Typescript...
